@@ -90,8 +90,8 @@ body {
     opacity: 0.8;
 }
 
-/* Десктоп - показываем все */
-.hide-on-mobile {
+/* По умолчанию ВСЕ ссылки видны */
+.link-card {
     display: block;
 }
 
@@ -111,7 +111,13 @@ body {
         padding: 20px;
     }
     
-    .hide-on-mobile {
+    /* Скрываем только ссылки которые НЕ должны быть на мобильных */
+    .link-card:not(.mobile-only) {
         display: none;
+    }
+    
+    /* Показываем только мобильные ссылки */
+    .mobile-only {
+        display: block !important;
     }
 }
