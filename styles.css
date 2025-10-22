@@ -89,13 +89,13 @@ body {
     opacity: 0.8;
 }
 
-/* По умолчанию ВСЕ ссылки видны */
-.link-card {
+/* На десктопе показываем ВСЕ */
+.desktop-item {
     display: block;
 }
 
-/* Мобильные устройства */
-@media (max-width: 768px) {
+/* На мобильных по умолчанию скрываем десктопные элементы */
+@media (max-width: 767px) {
     .links-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -109,8 +109,7 @@ body {
         padding: 20px;
     }
     
-    /* Скрываем только bat-файлы на мобильных */
-    .hide-on-mobile {
+    .desktop-item {
         display: none;
     }
 }
