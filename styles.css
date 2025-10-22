@@ -90,6 +90,10 @@ body {
     opacity: 0.8;
 }
 
+.hide-on-mobile {
+    display: block;
+}
+
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
     .links-grid {
@@ -104,4 +108,7 @@ body {
     .link-card {
         padding: 20px;
     }
+    
+    .hide-on-mobile {
+    display: none;
 }
