@@ -90,17 +90,16 @@ body {
     opacity: 0.8;
 }
 
+/* Десктоп - показываем все */
 .hide-on-mobile {
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-    padding: 30px;
-    margin: 0;
-    transition: all 0.3s ease;
+    display: block;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
+/* Мобильные устройства */
+@media only screen and (max-width: 768px), 
+       only screen and (max-device-width: 768px),
+       only screen and (max-width: 820px) and (max-height: 1180px)
+    
     .links-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -115,11 +114,6 @@ body {
     }
     
     .hide-on-mobile {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
+        display: none !important;
     }
 }
