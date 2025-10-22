@@ -89,13 +89,9 @@ body {
     opacity: 0.8;
 }
 
-/* Десктоп - показываем все */
-.desktop-only {
+/* По умолчанию ВСЕ ссылки видны */
+.link-card {
     display: block;
-}
-
-.mobile-only {
-    display: none;
 }
 
 /* Мобильные устройства */
@@ -113,11 +109,8 @@ body {
         padding: 20px;
     }
     
-    .desktop-only {
+    /* Скрываем только bat-файлы на мобильных */
+    .hide-on-mobile {
         display: none;
-    }
-    
-    .mobile-only {
-        display: block;
     }
 }
